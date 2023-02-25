@@ -1,0 +1,115 @@
+nav {
+  z-index: 100;
+
+  .sub-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+
+    .cross-btn {
+      cursor: pointer;
+    }
+  }
+
+  
+  .links {
+    z-index: 100;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    margin: 1.3rem;
+    padding: 1.5rem 0;
+    background-color: var(--white);
+    list-style: none;
+
+    li {
+      margin: .5rem;
+      padding: .3rem;
+      a {
+        text-decoration: none;
+        color: 	#505050;
+      }
+      &:hover {
+        a {
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .show-ul {
+    display: flex;
+  }
+  .main-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  nav {
+    font-size: 16px;
+    background-color: var(--white);
+    padding: 0 2rem;
+    .cross-btn {
+      display: none;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .sub-container {
+      padding: unset;
+    }
+
+    .links {
+      width: unset;
+      display: flex;
+      flex-direction: row;
+      margin: unset;
+      padding: unset;
+      position:static;
+      li {
+        padding: 1.5rem 1rem;
+        margin: unset;
+        border-bottom: 4px solid var(--white);
+        &:hover {
+          border-bottom: 4px solid var(--lime-green);
+        }
+      }
+    }
+    .main-btn {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  nav {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav {
+    padding: 0 6rem;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  nav {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1568px) {
+  nav {
+    padding: 0 9rem;
+    font-size: 18px;
+  }
+}
+
+//when screen go big than nav bg color to white

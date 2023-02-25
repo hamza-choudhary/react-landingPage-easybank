@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&family=Rubik:wght@300&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-blue: hsl(233, 26%, 24%);
+	--lime-green: hsl(136, 65%, 51%);
+	--bright-cyan: hsl(192, 70%, 51%);
+	/* neutral colors */
+	--grayish-blue: hsl(233, 8%, 62%);
+	--light-grayish-blue: hsl(220, 16%, 96%);
+	--very-light-gray: hsl(0, 0%, 98%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	font-family: 'Public Sans', 'Rubik', sans-serif;
+	font-size: 18px;
+	background-color: lightgoldenrodyellow;
+}
+
+
+button {
+	padding: 1rem 1.4rem;
+	border-radius: 50px;
+	border: none;
+	background-color: var(--lime-green);
+}

@@ -1,0 +1,91 @@
+.services {
+  background-color: var(--light-grayish-blue);
+  padding: 5rem 1rem;
+  font-size: 15px;
+  p {
+    color: var(--grayish-blue);
+    line-height: 25px;
+  }
+  .heading {
+    text-align: center;
+    h2 {
+      font-weight: 300;
+      font-size: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+  .container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    .service {
+      text-align: center;
+      margin: 2rem 0 0 0;
+      h3 {
+        margin: 1rem 0 .4rem 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .services {
+    padding-top: 0;
+    p {
+      padding: 0 8rem;
+      font-size: 17px;
+    }
+    .container {
+      .service {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .services {
+    padding: 0 2rem 5rem 2rem;
+    p {
+      padding: unset;
+    }
+    .heading {
+      text-align: left;
+      p {
+        span {
+          display: block;
+        }
+      }
+    }
+    .container {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 1rem;
+      .service {
+        text-align:left;
+        P {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services {
+    padding: 0 4rem 5rem 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services {
+    padding: 0 5rem 5rem 6rem;
+  }
+}
+@media only screen and (min-width: 1568px) {
+  .services {
+    padding: 0 11rem 5rem 11rem;
+  }
+}

@@ -1,0 +1,121 @@
+footer {
+	background-color: var(--dark-blue);
+  font-size: 16px;
+  color: var(--grayish-blue);
+  .container {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .introductory {
+          .logo {
+            margin-bottom: 1.5rem;
+            padding: .4rem;
+            margin: 0 5rem .3rem 5rem;
+            background-color: white;
+          }
+          .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+              margin: .6rem
+            }
+          }
+        }
+        .page-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          list-style:none;
+          li {
+            margin: .4rem;
+            a {
+              text-decoration: none;
+              color: var(--grayish-blue);
+              &:hover {
+                color: var(--lime-green);
+              }
+            }
+          }
+        }
+    }
+    .request-btn {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      button {
+        margin: 0 6rem;
+      }
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 720px) {
+  footer {
+    .container {
+      font-size: 15px;
+    }
+  }
+}
+@media only screen and (min-width: 940px) {
+  footer {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem;
+      .content{
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        .introductory {
+          margin: 0 1rem;
+          margin-left: 0;
+          .logo {
+            margin: 0 0 2rem 0;
+          }
+        }
+        .page-links {
+          margin: 0 1rem;
+        }
+      }
+      .request-btn {
+        margin: unset;
+        align-items: flex-end;
+        button {
+          margin: unset;
+        }
+        text-align: right;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    .container {
+      padding: 4rem 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  footer {
+    .container {
+      padding: 5rem 6rem;
+    }
+  }
+}
+@media only screen and (min-width: 1568px) {
+  footer {
+    .container {
+      padding: 6rem 11rem;
+    }
+  }
+}

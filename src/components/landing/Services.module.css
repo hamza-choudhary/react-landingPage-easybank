@@ -1,0 +1,107 @@
+.services {
+  background-color: var(--light-grayish-blue);
+  padding: 5rem 1rem;
+  font-size: 15px;
+}
+
+.services p {
+  color: var(--grayish-blue);
+  line-height: 25px;
+}
+
+.services .heading {
+  text-align: center;
+}
+
+.services .heading h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.services .heading p {
+  margin-top: 1rem;
+}
+
+.services .container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services .container .service {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+.services .container .service h3 {
+  margin: 1rem 0 .4rem 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 720px) {
+  .services {
+    padding-top: 0;
+  }
+  .services p {
+    padding: 0 8rem;
+    font-size: 17px;
+  }
+  .services .container .service {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .services {
+    padding: 0 2rem 5rem 2rem;
+  }
+  .services p {
+    padding: unset;
+  }
+  .services .heading {
+    text-align: left;
+  }
+  .services .heading p span {
+    display: block;
+  }
+  .services .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 1rem;
+  }
+  .services .container .service {
+    text-align: left;
+  }
+  .services .container .service P {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .services {
+    padding: 0 4rem 5rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services {
+    padding: 0 5rem 5rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 1568px) {
+  .services {
+    padding: 0 11rem 5rem 11rem;
+  }
+}
+/*# sourceMappingURL=Services.module.css.map */
